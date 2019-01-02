@@ -1,14 +1,9 @@
-package personal.nathan.domain;
+package hello;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * Description:
- * <p>
- * Created by nathan.z on 2019/1/1.
- */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
