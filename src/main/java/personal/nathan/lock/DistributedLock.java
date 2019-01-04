@@ -1,10 +1,13 @@
 package personal.nathan.lock;
 
+import org.springframework.stereotype.Component;
+
 /**
  * Description:
  * <p>
  * Created by nathan.z on 2019/1/3.
  */
+@Component
 public interface DistributedLock {
 
     /**
