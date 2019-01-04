@@ -13,7 +13,7 @@ public interface DistributedLock {
      * @param lockName 锁名称
      * @param tryLockTimeout 尝试的加锁时间
      * @param timeout
-     * @return
+     * @return 不为空-加锁成功，为空-加锁失败
      */
     String tryLock(String lockName, long tryLockTimeout, long timeout);
 
