@@ -1,4 +1,4 @@
-package personal.nathan.controllers;
+package personal.nathan.controller;
 
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
