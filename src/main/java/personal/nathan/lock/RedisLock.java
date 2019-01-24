@@ -24,7 +24,7 @@ public class RedisLock implements DistributedLock {
     /**
      * 尝试加锁的最大时间
      */
-    private static final int MAX_TRYLOCKTIMEOUT = 1000;
+    private static final int MAX_TRYLOCKTIMEOUT = 2000;
 
     @Resource
     private RedisTemplate<String, String> redisTemplate;
@@ -46,7 +46,6 @@ public class RedisLock implements DistributedLock {
             // 设置超时时间
             redisTemplate.expire(redisKey, timeout, TimeUnit.MILLISECONDS);
             // 执行事务
-            redisTemplate.exec();
             List<Object> resList = redisTemplate.exec();
             if (resList != null
                     && !resList.isEmpty()) {
